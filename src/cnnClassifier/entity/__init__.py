@@ -1,0 +1,1 @@
+# Entity define any custom return types

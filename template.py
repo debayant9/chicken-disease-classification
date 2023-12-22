@@ -2,6 +2,7 @@ import os
 from pathlib import Path
 import logging 
 
+# creates the folder structure for the project
 
 logging.basicConfig(level=logging.INFO, format='[%(asctime)s]: %(message)s:')
 
