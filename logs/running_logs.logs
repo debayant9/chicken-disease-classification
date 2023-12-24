@@ -86,3 +86,464 @@ x==========x]
 [2023-12-22 14:29:34,748: INFO: main:>>>>>> stage Prepare base model completed <<<<<<
 
 x==========x]
+[2023-12-22 14:56:54,240: WARNING: module_wrapper:From C:\Users\indtal\AppData\Local\anaconda3\envs\deepLearning\Lib\site-packages\keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+]
+[2023-12-22 14:56:54,472: INFO: utils:NumExpr defaulting to 8 threads.]
+[2023-12-22 14:56:55,130: INFO: main:>>>>>> stage Data Ingestion stage started <<<<<<]
+[2023-12-22 14:56:55,157: INFO: common:yaml file: config\config.yaml loaded successfully]
+[2023-12-22 14:56:55,167: INFO: common:yaml file: params.yaml loaded successfully]
+[2023-12-22 14:56:55,170: INFO: common:created directory at: artifacts]
+[2023-12-22 14:56:55,173: INFO: common:created directory at: artifacts/data_ingestion]
+[2023-12-22 14:57:03,041: INFO: data_ingestion:artifacts/data_ingestion/data.zip download! with following info: 
+Connection: close
+Content-Length: 11616915
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "adf745abc03891fe493c3be264ec012691fe3fa21d861f35a27edbe6d86a76b1"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: 4F70:307927:188417:29463D:65854FE4
+Accept-Ranges: bytes
+Date: Fri, 22 Dec 2023 09:26:56 GMT
+Via: 1.1 varnish
+X-Served-By: cache-hyd1100021-HYD
+X-Cache: HIT
+X-Cache-Hits: 0
+X-Timer: S1703237216.333913,VS0,VE313
+Vary: Authorization,Accept-Encoding,Origin
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: 1fe5229b80b17ce18a95aeea6d67f70a3084b2b4
+Expires: Fri, 22 Dec 2023 09:31:56 GMT
+Source-Age: 0
+
+]
+[2023-12-22 14:57:03,487: INFO: main:>>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2023-12-22 14:57:03,488: INFO: main:*******************]
+[2023-12-22 14:57:03,489: INFO: main:>>>>>> stage Prepare base model started <<<<<<]
+[2023-12-22 14:57:03,492: INFO: common:yaml file: config\config.yaml loaded successfully]
+[2023-12-22 14:57:03,495: INFO: common:yaml file: params.yaml loaded successfully]
+[2023-12-22 14:57:03,497: INFO: common:created directory at: artifacts]
+[2023-12-22 14:57:03,502: INFO: common:created directory at: artifacts/prepare_base_model]
+[2023-12-22 14:57:03,695: WARNING: module_wrapper:From C:\Users\indtal\AppData\Local\anaconda3\envs\deepLearning\Lib\site-packages\keras\src\backend.py:1398: The name tf.executing_eagerly_outside_functions is deprecated. Please use tf.compat.v1.executing_eagerly_outside_functions instead.
+]
+[2023-12-22 14:57:03,789: WARNING: module_wrapper:From C:\Users\indtal\AppData\Local\anaconda3\envs\deepLearning\Lib\site-packages\keras\src\layers\pooling\max_pooling2d.py:161: The name tf.nn.max_pool is deprecated. Please use tf.nn.max_pool2d instead.
+]
+[2023-12-22 14:57:04,334: WARNING: saving_utils:Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2023-12-22 14:57:05,036: INFO: main:>>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2023-12-22 14:57:05,043: INFO: main:*******************]
+[2023-12-22 14:57:05,058: INFO: main:>>>>>> stage Training started <<<<<<]
+[2023-12-22 14:57:05,088: INFO: common:yaml file: config\config.yaml loaded successfully]
+[2023-12-22 14:57:05,110: INFO: common:yaml file: params.yaml loaded successfully]
+[2023-12-22 14:57:05,119: INFO: common:created directory at: artifacts]
+[2023-12-22 14:57:05,124: ERROR: main:name 'os' is not defined]
+Traceback (most recent call last):
+  File "c:\Users\indtal\OneDrive - Vanderlande\Desktop\Misc\Projects - 2024\chicken-disease-classification\main.py", line 34, in <module>
+    model_trainer.main()
+  File "c:\users\indtal\onedrive - vanderlande\desktop\misc\projects - 2024\chicken-disease-classification\src\cnnClassifier\pipeline\stage_03_training.py", line 17, in main
+    prepare_callbacks_config = config.get_prepare_callback_config()
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\users\indtal\onedrive - vanderlande\desktop\misc\projects - 2024\chicken-disease-classification\src\cnnClassifier\config\configuration.py", line 59, in get_prepare_callback_config
+    model_ckpt_dir = os.path.dirname(config.checkpoint_model_filepath)
+                     ^^
+NameError: name 'os' is not defined
+[2023-12-22 14:58:35,543: WARNING: module_wrapper:From C:\Users\indtal\AppData\Local\anaconda3\envs\deepLearning\Lib\site-packages\keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+]
+[2023-12-22 14:58:35,862: INFO: utils:NumExpr defaulting to 8 threads.]
+[2023-12-22 14:58:36,627: INFO: main:>>>>>> stage Data Ingestion stage started <<<<<<]
+[2023-12-22 14:58:36,630: INFO: common:yaml file: config\config.yaml loaded successfully]
+[2023-12-22 14:58:36,632: INFO: common:yaml file: params.yaml loaded successfully]
+[2023-12-22 14:58:36,633: INFO: common:created directory at: artifacts]
+[2023-12-22 14:58:36,635: INFO: common:created directory at: artifacts/data_ingestion]
+[2023-12-22 14:58:36,636: INFO: data_ingestion:File already exists of size: ~ 11345 KB]
+[2023-12-22 14:58:37,391: ERROR: main:[Errno 13] Permission denied: 'artifacts\\data_ingestion\\Chicken-fecal-images\\Healthy\\healthy.145.jpg']
+Traceback (most recent call last):
+  File "c:\Users\indtal\OneDrive - Vanderlande\Desktop\Misc\Projects - 2024\chicken-disease-classification\main.py", line 10, in <module>
+    obj.main()
+  File "c:\users\indtal\onedrive - vanderlande\desktop\misc\projects - 2024\chicken-disease-classification\src\cnnClassifier\pipeline\stage_01_data_ingestion.py", line 17, in main
+    data_ingestion.extract_zip_file()
+  File "c:\users\indtal\onedrive - vanderlande\desktop\misc\projects - 2024\chicken-disease-classification\src\cnnClassifier\components\data_ingestion.py", line 37, in extract_zip_file
+    zip_ref.extractall(unzip_path)
+  File "C:\Users\indtal\AppData\Local\anaconda3\envs\deepLearning\Lib\zipfile.py", line 1681, in extractall
+    self._extract_member(zipinfo, path, pwd)
+  File "C:\Users\indtal\AppData\Local\anaconda3\envs\deepLearning\Lib\zipfile.py", line 1735, in _extract_member
+    open(targetpath, "wb") as target:
+    ^^^^^^^^^^^^^^^^^^^^^^
+PermissionError: [Errno 13] Permission denied: 'artifacts\\data_ingestion\\Chicken-fecal-images\\Healthy\\healthy.145.jpg'
+[2023-12-22 14:59:11,534: WARNING: module_wrapper:From C:\Users\indtal\AppData\Local\anaconda3\envs\deepLearning\Lib\site-packages\keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+]
+[2023-12-22 14:59:11,722: INFO: utils:NumExpr defaulting to 8 threads.]
+[2023-12-22 14:59:12,316: INFO: main:>>>>>> stage Data Ingestion stage started <<<<<<]
+[2023-12-22 14:59:12,320: INFO: common:yaml file: config\config.yaml loaded successfully]
+[2023-12-22 14:59:12,321: INFO: common:yaml file: params.yaml loaded successfully]
+[2023-12-22 14:59:12,324: INFO: common:created directory at: artifacts]
+[2023-12-22 14:59:12,326: INFO: common:created directory at: artifacts/data_ingestion]
+[2023-12-22 14:59:20,221: INFO: data_ingestion:artifacts/data_ingestion/data.zip download! with following info: 
+Connection: close
+Content-Length: 11616915
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "adf745abc03891fe493c3be264ec012691fe3fa21d861f35a27edbe6d86a76b1"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: 4F70:307927:188417:29463D:65854FE4
+Accept-Ranges: bytes
+Date: Fri, 22 Dec 2023 09:29:13 GMT
+Via: 1.1 varnish
+X-Served-By: cache-hyd1100024-HYD
+X-Cache: HIT
+X-Cache-Hits: 0
+X-Timer: S1703237353.364499,VS0,VE1
+Vary: Authorization,Accept-Encoding,Origin
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: 444167ce773537b619407bbac2c67162538fdc30
+Expires: Fri, 22 Dec 2023 09:34:13 GMT
+Source-Age: 137
+
+]
+[2023-12-22 14:59:20,744: INFO: main:>>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2023-12-22 14:59:20,745: INFO: main:*******************]
+[2023-12-22 14:59:20,746: INFO: main:>>>>>> stage Prepare base model started <<<<<<]
+[2023-12-22 14:59:20,754: INFO: common:yaml file: config\config.yaml loaded successfully]
+[2023-12-22 14:59:20,756: INFO: common:yaml file: params.yaml loaded successfully]
+[2023-12-22 14:59:20,767: INFO: common:created directory at: artifacts]
+[2023-12-22 14:59:20,772: INFO: common:created directory at: artifacts/prepare_base_model]
+[2023-12-22 14:59:21,151: WARNING: module_wrapper:From C:\Users\indtal\AppData\Local\anaconda3\envs\deepLearning\Lib\site-packages\keras\src\backend.py:1398: The name tf.executing_eagerly_outside_functions is deprecated. Please use tf.compat.v1.executing_eagerly_outside_functions instead.
+]
+[2023-12-22 14:59:21,289: WARNING: module_wrapper:From C:\Users\indtal\AppData\Local\anaconda3\envs\deepLearning\Lib\site-packages\keras\src\layers\pooling\max_pooling2d.py:161: The name tf.nn.max_pool is deprecated. Please use tf.nn.max_pool2d instead.
+]
+[2023-12-22 14:59:21,997: WARNING: saving_utils:Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2023-12-22 14:59:22,562: INFO: main:>>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2023-12-22 14:59:22,563: INFO: main:*******************]
+[2023-12-22 14:59:22,564: INFO: main:>>>>>> stage Training started <<<<<<]
+[2023-12-22 14:59:22,570: INFO: common:yaml file: config\config.yaml loaded successfully]
+[2023-12-22 14:59:22,573: INFO: common:yaml file: params.yaml loaded successfully]
+[2023-12-22 14:59:22,576: INFO: common:created directory at: artifacts]
+[2023-12-22 14:59:22,582: INFO: common:created directory at: artifacts\prepare_callbacks\checkpoint_dir]
+[2023-12-22 14:59:22,584: INFO: common:created directory at: artifacts\prepare_callbacks\tensorboard_log_dir]
+[2023-12-22 14:59:22,591: ERROR: main:'WindowsPath' object has no attribute 'endswith']
+Traceback (most recent call last):
+  File "c:\Users\indtal\OneDrive - Vanderlande\Desktop\Misc\Projects - 2024\chicken-disease-classification\main.py", line 34, in <module>
+    model_trainer.main()
+  File "c:\users\indtal\onedrive - vanderlande\desktop\misc\projects - 2024\chicken-disease-classification\src\cnnClassifier\pipeline\stage_03_training.py", line 19, in main
+    callback_list = prepare_callbacks.get_tb_ckpt_callbacks()
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\users\indtal\onedrive - vanderlande\desktop\misc\projects - 2024\chicken-disease-classification\src\cnnClassifier\components\prepare_callbacks.py", line 36, in get_tb_ckpt_callbacks
+    self._create_ckpt_callbacks
+  File "c:\users\indtal\onedrive - vanderlande\desktop\misc\projects - 2024\chicken-disease-classification\src\cnnClassifier\components\prepare_callbacks.py", line 27, in _create_ckpt_callbacks
+    return tf.keras.callbacks.ModelCheckpoint(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\indtal\AppData\Local\anaconda3\envs\deepLearning\Lib\site-packages\keras\src\callbacks.py", line 1369, in __init__
+    if filepath and filepath.endswith(".keras") and options is not None:
+                    ^^^^^^^^^^^^^^^^^
+AttributeError: 'WindowsPath' object has no attribute 'endswith'
+[2023-12-24 18:27:25,549: WARNING: module_wrapper:From C:\Users\indtal\AppData\Local\anaconda3\envs\deepLearning\Lib\site-packages\keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+]
+[2023-12-24 18:27:25,885: INFO: utils:NumExpr defaulting to 8 threads.]
+[2023-12-24 18:27:26,922: INFO: main:>>>>>> stage Data Ingestion stage started <<<<<<]
+[2023-12-24 18:27:26,925: INFO: common:yaml file: config\config.yaml loaded successfully]
+[2023-12-24 18:27:26,928: INFO: common:yaml file: params.yaml loaded successfully]
+[2023-12-24 18:27:26,929: INFO: common:created directory at: artifacts]
+[2023-12-24 18:27:26,930: INFO: common:created directory at: artifacts/data_ingestion]
+[2023-12-24 18:27:26,931: INFO: data_ingestion:File already exists of size: ~ 11345 KB]
+[2023-12-24 18:27:30,211: INFO: main:>>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2023-12-24 18:27:30,212: INFO: main:*******************]
+[2023-12-24 18:27:30,212: INFO: main:>>>>>> stage Prepare base model started <<<<<<]
+[2023-12-24 18:27:30,217: INFO: common:yaml file: config\config.yaml loaded successfully]
+[2023-12-24 18:27:30,220: INFO: common:yaml file: params.yaml loaded successfully]
+[2023-12-24 18:27:30,222: INFO: common:created directory at: artifacts]
+[2023-12-24 18:27:30,223: INFO: common:created directory at: artifacts/prepare_base_model]
+[2023-12-24 18:27:30,523: WARNING: module_wrapper:From C:\Users\indtal\AppData\Local\anaconda3\envs\deepLearning\Lib\site-packages\keras\src\backend.py:1398: The name tf.executing_eagerly_outside_functions is deprecated. Please use tf.compat.v1.executing_eagerly_outside_functions instead.
+]
+[2023-12-24 18:27:30,743: WARNING: module_wrapper:From C:\Users\indtal\AppData\Local\anaconda3\envs\deepLearning\Lib\site-packages\keras\src\layers\pooling\max_pooling2d.py:161: The name tf.nn.max_pool is deprecated. Please use tf.nn.max_pool2d instead.
+]
+[2023-12-24 18:27:31,410: WARNING: saving_utils:Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2023-12-24 18:27:31,891: INFO: main:>>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2023-12-24 18:27:31,894: INFO: main:*******************]
+[2023-12-24 18:27:31,895: INFO: main:>>>>>> stage Training started <<<<<<]
+[2023-12-24 18:27:31,902: INFO: common:yaml file: config\config.yaml loaded successfully]
+[2023-12-24 18:27:31,912: INFO: common:yaml file: params.yaml loaded successfully]
+[2023-12-24 18:27:31,914: INFO: common:created directory at: artifacts]
+[2023-12-24 18:27:31,916: INFO: common:created directory at: artifacts\prepare_callbacks\checkpoint_dir]
+[2023-12-24 18:27:31,918: INFO: common:created directory at: artifacts\prepare_callbacks\tensorboard_log_dir]
+[2023-12-24 18:27:31,924: ERROR: main:'WindowsPath' object has no attribute 'endswith']
+Traceback (most recent call last):
+  File "c:\Users\indtal\OneDrive - Vanderlande\Desktop\Misc\Projects - 2024\chicken-disease-classification\main.py", line 35, in <module>
+    model_trainer.main()
+  File "c:\users\indtal\onedrive - vanderlande\desktop\misc\projects - 2024\chicken-disease-classification\src\cnnClassifier\pipeline\stage_03_training.py", line 19, in main
+    callback_list = prepare_callbacks.get_tb_ckpt_callbacks()
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\users\indtal\onedrive - vanderlande\desktop\misc\projects - 2024\chicken-disease-classification\src\cnnClassifier\components\prepare_callbacks.py", line 36, in get_tb_ckpt_callbacks
+    self._create_ckpt_callbacks
+  File "c:\users\indtal\onedrive - vanderlande\desktop\misc\projects - 2024\chicken-disease-classification\src\cnnClassifier\components\prepare_callbacks.py", line 27, in _create_ckpt_callbacks
+    return tf.keras.callbacks.ModelCheckpoint(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\indtal\AppData\Local\anaconda3\envs\deepLearning\Lib\site-packages\keras\src\callbacks.py", line 1369, in __init__
+    if filepath and filepath.endswith(".keras") and options is not None:
+                    ^^^^^^^^^^^^^^^^^
+AttributeError: 'WindowsPath' object has no attribute 'endswith'
+[2023-12-24 18:47:45,155: WARNING: module_wrapper:From C:\Users\indtal\AppData\Local\anaconda3\envs\deepLearning\Lib\site-packages\keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+]
+[2023-12-24 18:47:45,572: INFO: utils:NumExpr defaulting to 8 threads.]
+[2023-12-24 18:47:46,845: INFO: main:>>>>>> stage Data Ingestion stage started <<<<<<]
+[2023-12-24 18:47:46,859: INFO: common:yaml file: config\config.yaml loaded successfully]
+[2023-12-24 18:47:46,865: INFO: common:yaml file: params.yaml loaded successfully]
+[2023-12-24 18:47:46,869: INFO: common:created directory at: artifacts]
+[2023-12-24 18:47:46,873: INFO: common:created directory at: artifacts/data_ingestion]
+[2023-12-24 18:47:46,875: INFO: data_ingestion:File already exists of size: ~ 11345 KB]
+[2023-12-24 18:47:47,388: INFO: main:>>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2023-12-24 18:47:47,389: INFO: main:*******************]
+[2023-12-24 18:47:47,390: INFO: main:>>>>>> stage Prepare base model started <<<<<<]
+[2023-12-24 18:47:47,401: INFO: common:yaml file: config\config.yaml loaded successfully]
+[2023-12-24 18:47:47,409: INFO: common:yaml file: params.yaml loaded successfully]
+[2023-12-24 18:47:47,411: INFO: common:created directory at: artifacts]
+[2023-12-24 18:47:47,412: INFO: common:created directory at: artifacts/prepare_base_model]
+[2023-12-24 18:47:47,646: WARNING: module_wrapper:From C:\Users\indtal\AppData\Local\anaconda3\envs\deepLearning\Lib\site-packages\keras\src\backend.py:1398: The name tf.executing_eagerly_outside_functions is deprecated. Please use tf.compat.v1.executing_eagerly_outside_functions instead.
+]
+[2023-12-24 18:47:47,863: WARNING: module_wrapper:From C:\Users\indtal\AppData\Local\anaconda3\envs\deepLearning\Lib\site-packages\keras\src\layers\pooling\max_pooling2d.py:161: The name tf.nn.max_pool is deprecated. Please use tf.nn.max_pool2d instead.
+]
+[2023-12-24 18:47:48,642: WARNING: saving_utils:Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2023-12-24 18:47:49,331: INFO: main:>>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2023-12-24 18:47:49,333: INFO: main:*******************]
+[2023-12-24 18:47:49,334: INFO: main:>>>>>> stage Training started <<<<<<]
+[2023-12-24 18:47:49,350: INFO: common:yaml file: config\config.yaml loaded successfully]
+[2023-12-24 18:47:49,362: INFO: common:yaml file: params.yaml loaded successfully]
+[2023-12-24 18:47:49,363: INFO: common:created directory at: artifacts]
+[2023-12-24 18:48:15,860: INFO: common:created directory at: artifacts\prepare_callbacks\checkpoint_dir]
+[2023-12-24 18:48:15,862: INFO: common:created directory at: artifacts\prepare_callbacks\tensorboard_log_dir]
+[2023-12-24 18:48:44,875: ERROR: main:'WindowsPath' object has no attribute 'endswith']
+Traceback (most recent call last):
+  File "C:\Users\indtal\OneDrive - Vanderlande\Desktop\Misc\Projects - 2024\chicken-disease-classification\main.py", line 35, in <module>
+    model_trainer.main()
+  File "c:\users\indtal\onedrive - vanderlande\desktop\misc\projects - 2024\chicken-disease-classification\src\cnnClassifier\pipeline\stage_03_training.py", line 19, in main
+    callback_list = prepare_callbacks.get_tb_ckpt_callbacks()
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\users\indtal\onedrive - vanderlande\desktop\misc\projects - 2024\chicken-disease-classification\src\cnnClassifier\components\prepare_callbacks.py", line 36, in get_tb_ckpt_callbacks
+    self._create_ckpt_callbacks
+  File "c:\users\indtal\onedrive - vanderlande\desktop\misc\projects - 2024\chicken-disease-classification\src\cnnClassifier\components\prepare_callbacks.py", line 27, in _create_ckpt_callbacks
+    return tf.keras.callbacks.ModelCheckpoint(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\indtal\AppData\Local\anaconda3\envs\deepLearning\Lib\site-packages\keras\src\callbacks.py", line 1369, in __init__
+    if filepath and filepath.endswith(".keras") and options is not None:
+                    ^^^^^^^^^^^^^^^^^
+AttributeError: 'WindowsPath' object has no attribute 'endswith'
+[2023-12-24 18:51:45,639: WARNING: module_wrapper:From C:\Users\indtal\AppData\Local\anaconda3\envs\deepLearning\Lib\site-packages\tensorflow_estimator\python\estimator\util.py:74: The name tf.train.SessionRunHook is deprecated. Please use tf.estimator.SessionRunHook instead.
+]
+[2023-12-24 19:09:19,679: WARNING: module_wrapper:From C:\Users\indtal\AppData\Local\anaconda3\envs\deepLearning\Lib\site-packages\keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+]
+[2023-12-24 19:09:19,846: INFO: utils:NumExpr defaulting to 8 threads.]
+[2023-12-24 19:09:20,347: INFO: main:>>>>>> stage Data Ingestion stage started <<<<<<]
+[2023-12-24 19:09:20,356: INFO: common:yaml file: config\config.yaml loaded successfully]
+[2023-12-24 19:09:20,362: INFO: common:yaml file: params.yaml loaded successfully]
+[2023-12-24 19:09:20,364: INFO: common:created directory at: artifacts]
+[2023-12-24 19:09:20,364: INFO: common:created directory at: artifacts/data_ingestion]
+[2023-12-24 19:09:20,366: INFO: data_ingestion:File already exists of size: ~ 11345 KB]
+[2023-12-24 19:09:20,797: INFO: main:>>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2023-12-24 19:09:20,798: INFO: main:*******************]
+[2023-12-24 19:09:20,799: INFO: main:>>>>>> stage Prepare base model started <<<<<<]
+[2023-12-24 19:09:20,802: INFO: common:yaml file: config\config.yaml loaded successfully]
+[2023-12-24 19:09:20,804: INFO: common:yaml file: params.yaml loaded successfully]
+[2023-12-24 19:09:20,806: INFO: common:created directory at: artifacts]
+[2023-12-24 19:09:20,810: INFO: common:created directory at: artifacts/prepare_base_model]
+[2023-12-24 19:09:20,980: WARNING: module_wrapper:From C:\Users\indtal\AppData\Local\anaconda3\envs\deepLearning\Lib\site-packages\keras\src\backend.py:1398: The name tf.executing_eagerly_outside_functions is deprecated. Please use tf.compat.v1.executing_eagerly_outside_functions instead.
+]
+[2023-12-24 19:09:21,060: WARNING: module_wrapper:From C:\Users\indtal\AppData\Local\anaconda3\envs\deepLearning\Lib\site-packages\keras\src\layers\pooling\max_pooling2d.py:161: The name tf.nn.max_pool is deprecated. Please use tf.nn.max_pool2d instead.
+]
+[2023-12-24 19:09:21,427: WARNING: saving_utils:Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2023-12-24 19:09:21,712: INFO: main:>>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2023-12-24 19:09:21,716: INFO: main:*******************]
+[2023-12-24 19:09:21,716: INFO: main:>>>>>> stage Training started <<<<<<]
+[2023-12-24 19:09:21,726: INFO: common:yaml file: config\config.yaml loaded successfully]
+[2023-12-24 19:09:21,730: INFO: common:yaml file: params.yaml loaded successfully]
+[2023-12-24 19:09:21,734: INFO: common:created directory at: artifacts]
+[2023-12-24 19:09:21,736: INFO: common:created directory at: artifacts\prepare_callbacks]
+[2023-12-24 19:09:21,737: INFO: common:created directory at: artifacts\prepare_callbacks\tensorboard_log_dir]
+[2023-12-24 19:09:21,740: ERROR: main:'WindowsPath' object has no attribute 'endswith']
+Traceback (most recent call last):
+  File "c:\Users\indtal\OneDrive - Vanderlande\Desktop\Misc\Projects - 2024\chicken-disease-classification\main.py", line 35, in <module>
+    model_trainer.main()
+  File "c:\users\indtal\onedrive - vanderlande\desktop\misc\projects - 2024\chicken-disease-classification\src\cnnClassifier\pipeline\stage_03_training.py", line 19, in main
+    callback_list = prepare_callbacks.get_tb_ckpt_callbacks()
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\users\indtal\onedrive - vanderlande\desktop\misc\projects - 2024\chicken-disease-classification\src\cnnClassifier\components\prepare_callbacks.py", line 36, in get_tb_ckpt_callbacks
+    self._create_ckpt_callbacks
+  File "c:\users\indtal\onedrive - vanderlande\desktop\misc\projects - 2024\chicken-disease-classification\src\cnnClassifier\components\prepare_callbacks.py", line 27, in _create_ckpt_callbacks
+    return tf.keras.callbacks.ModelCheckpoint(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\indtal\AppData\Local\anaconda3\envs\deepLearning\Lib\site-packages\keras\src\callbacks.py", line 1369, in __init__
+    if filepath and filepath.endswith(".keras") and options is not None:
+                    ^^^^^^^^^^^^^^^^^
+AttributeError: 'WindowsPath' object has no attribute 'endswith'
+[2023-12-24 19:10:33,006: WARNING: module_wrapper:From C:\Users\indtal\AppData\Local\anaconda3\envs\deepLearning\Lib\site-packages\keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+]
+[2023-12-24 19:10:33,282: INFO: utils:NumExpr defaulting to 8 threads.]
+[2023-12-24 19:10:34,079: INFO: main:>>>>>> stage Data Ingestion stage started <<<<<<]
+[2023-12-24 19:10:34,097: INFO: common:yaml file: config\config.yaml loaded successfully]
+[2023-12-24 19:10:34,106: INFO: common:yaml file: params.yaml loaded successfully]
+[2023-12-24 19:10:34,108: INFO: common:created directory at: artifacts]
+[2023-12-24 19:10:34,109: INFO: common:created directory at: artifacts/data_ingestion]
+[2023-12-24 19:10:34,110: INFO: data_ingestion:File already exists of size: ~ 11345 KB]
+[2023-12-24 19:10:34,568: INFO: main:>>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2023-12-24 19:10:34,569: INFO: main:*******************]
+[2023-12-24 19:10:34,569: INFO: main:>>>>>> stage Prepare base model started <<<<<<]
+[2023-12-24 19:10:34,580: INFO: common:yaml file: config\config.yaml loaded successfully]
+[2023-12-24 19:10:34,589: INFO: common:yaml file: params.yaml loaded successfully]
+[2023-12-24 19:10:34,590: INFO: common:created directory at: artifacts]
+[2023-12-24 19:10:34,591: INFO: common:created directory at: artifacts/prepare_base_model]
+[2023-12-24 19:10:34,986: WARNING: module_wrapper:From C:\Users\indtal\AppData\Local\anaconda3\envs\deepLearning\Lib\site-packages\keras\src\backend.py:1398: The name tf.executing_eagerly_outside_functions is deprecated. Please use tf.compat.v1.executing_eagerly_outside_functions instead.
+]
+[2023-12-24 19:10:35,367: WARNING: module_wrapper:From C:\Users\indtal\AppData\Local\anaconda3\envs\deepLearning\Lib\site-packages\keras\src\layers\pooling\max_pooling2d.py:161: The name tf.nn.max_pool is deprecated. Please use tf.nn.max_pool2d instead.
+]
+[2023-12-24 19:10:35,996: WARNING: saving_utils:Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2023-12-24 19:10:36,452: INFO: main:>>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2023-12-24 19:10:36,454: INFO: main:*******************]
+[2023-12-24 19:10:36,454: INFO: main:>>>>>> stage Training started <<<<<<]
+[2023-12-24 19:10:36,470: INFO: common:yaml file: config\config.yaml loaded successfully]
+[2023-12-24 19:10:36,477: INFO: common:yaml file: params.yaml loaded successfully]
+[2023-12-24 19:10:36,478: INFO: common:created directory at: artifacts]
+[2023-12-24 19:10:42,213: INFO: common:created directory at: artifacts\prepare_callbacks]
+[2023-12-24 19:10:42,214: INFO: common:created directory at: artifacts\prepare_callbacks\tensorboard_log_dir]
+[2023-12-24 19:10:48,612: ERROR: main:'WindowsPath' object has no attribute 'endswith']
+Traceback (most recent call last):
+  File "C:\Users\indtal\OneDrive - Vanderlande\Desktop\Misc\Projects - 2024\chicken-disease-classification\main.py", line 35, in <module>
+    model_trainer.main()
+  File "c:\users\indtal\onedrive - vanderlande\desktop\misc\projects - 2024\chicken-disease-classification\src\cnnClassifier\pipeline\stage_03_training.py", line 19, in main
+    callback_list = prepare_callbacks.get_tb_ckpt_callbacks()
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\users\indtal\onedrive - vanderlande\desktop\misc\projects - 2024\chicken-disease-classification\src\cnnClassifier\components\prepare_callbacks.py", line 36, in get_tb_ckpt_callbacks
+    self._create_ckpt_callbacks
+  File "c:\users\indtal\onedrive - vanderlande\desktop\misc\projects - 2024\chicken-disease-classification\src\cnnClassifier\components\prepare_callbacks.py", line 27, in _create_ckpt_callbacks
+    return tf.keras.callbacks.ModelCheckpoint(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\indtal\AppData\Local\anaconda3\envs\deepLearning\Lib\site-packages\keras\src\callbacks.py", line 1369, in __init__
+    if filepath and filepath.endswith(".keras") and options is not None:
+                    ^^^^^^^^^^^^^^^^^
+AttributeError: 'WindowsPath' object has no attribute 'endswith'
+[2023-12-24 19:13:08,644: WARNING: module_wrapper:From C:\Users\indtal\AppData\Local\anaconda3\envs\deepLearning\Lib\site-packages\keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+]
+[2023-12-24 19:13:08,937: INFO: utils:NumExpr defaulting to 8 threads.]
+[2023-12-24 19:13:09,739: INFO: main:>>>>>> stage Data Ingestion stage started <<<<<<]
+[2023-12-24 19:13:09,752: INFO: common:yaml file: config\config.yaml loaded successfully]
+[2023-12-24 19:13:09,760: INFO: common:yaml file: params.yaml loaded successfully]
+[2023-12-24 19:13:09,761: INFO: common:created directory at: artifacts]
+[2023-12-24 19:13:09,762: INFO: common:created directory at: artifacts/data_ingestion]
+[2023-12-24 19:13:09,763: INFO: data_ingestion:File already exists of size: ~ 11345 KB]
+[2023-12-24 19:13:10,215: INFO: main:>>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2023-12-24 19:13:10,216: INFO: main:*******************]
+[2023-12-24 19:13:10,217: INFO: main:>>>>>> stage Prepare base model started <<<<<<]
+[2023-12-24 19:13:10,231: INFO: common:yaml file: config\config.yaml loaded successfully]
+[2023-12-24 19:13:10,255: INFO: common:yaml file: params.yaml loaded successfully]
+[2023-12-24 19:13:10,259: INFO: common:created directory at: artifacts]
+[2023-12-24 19:13:10,263: INFO: common:created directory at: artifacts/prepare_base_model]
+[2023-12-24 19:13:10,535: WARNING: module_wrapper:From C:\Users\indtal\AppData\Local\anaconda3\envs\deepLearning\Lib\site-packages\keras\src\backend.py:1398: The name tf.executing_eagerly_outside_functions is deprecated. Please use tf.compat.v1.executing_eagerly_outside_functions instead.
+]
+[2023-12-24 19:13:10,670: WARNING: module_wrapper:From C:\Users\indtal\AppData\Local\anaconda3\envs\deepLearning\Lib\site-packages\keras\src\layers\pooling\max_pooling2d.py:161: The name tf.nn.max_pool is deprecated. Please use tf.nn.max_pool2d instead.
+]
+[2023-12-24 19:13:11,449: WARNING: saving_utils:Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2023-12-24 19:13:11,995: INFO: main:>>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2023-12-24 19:13:11,997: INFO: main:*******************]
+[2023-12-24 19:13:11,998: INFO: main:>>>>>> stage Training started <<<<<<]
+[2023-12-24 19:13:12,030: INFO: common:yaml file: config\config.yaml loaded successfully]
+[2023-12-24 19:13:12,045: INFO: common:yaml file: params.yaml loaded successfully]
+[2023-12-24 19:13:12,048: INFO: common:created directory at: artifacts]
+[2023-12-24 19:13:16,258: INFO: common:created directory at: artifacts\prepare_callbacks]
+[2023-12-24 19:13:16,259: INFO: common:created directory at: artifacts\prepare_callbacks\tensorboard_log_dir]
+[2023-12-24 19:13:17,399: ERROR: main:'WindowsPath' object has no attribute 'endswith']
+Traceback (most recent call last):
+  File "C:\Users\indtal\OneDrive - Vanderlande\Desktop\Misc\Projects - 2024\chicken-disease-classification\main.py", line 35, in <module>
+    model_trainer.main()
+  File "c:\users\indtal\onedrive - vanderlande\desktop\misc\projects - 2024\chicken-disease-classification\src\cnnClassifier\pipeline\stage_03_training.py", line 19, in main
+    callback_list = prepare_callbacks.get_tb_ckpt_callbacks()
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\users\indtal\onedrive - vanderlande\desktop\misc\projects - 2024\chicken-disease-classification\src\cnnClassifier\components\prepare_callbacks.py", line 37, in get_tb_ckpt_callbacks
+    self._create_ckpt_callbacks
+  File "c:\users\indtal\onedrive - vanderlande\desktop\misc\projects - 2024\chicken-disease-classification\src\cnnClassifier\components\prepare_callbacks.py", line 28, in _create_ckpt_callbacks
+    return tf.keras.callbacks.ModelCheckpoint(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\indtal\AppData\Local\anaconda3\envs\deepLearning\Lib\site-packages\keras\src\callbacks.py", line 1369, in __init__
+    if filepath and filepath.endswith(".keras") and options is not None:
+                    ^^^^^^^^^^^^^^^^^
+AttributeError: 'WindowsPath' object has no attribute 'endswith'
+[2023-12-24 19:31:38,901: WARNING: module_wrapper:From C:\Users\indtal\AppData\Local\anaconda3\envs\deepLearning\Lib\site-packages\keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+]
+[2023-12-24 19:31:39,108: INFO: utils:NumExpr defaulting to 8 threads.]
+[2023-12-24 19:31:39,729: INFO: main:>>>>>> stage Data Ingestion stage started <<<<<<]
+[2023-12-24 19:31:39,743: INFO: common:yaml file: config\config.yaml loaded successfully]
+[2023-12-24 19:31:39,748: INFO: common:yaml file: params.yaml loaded successfully]
+[2023-12-24 19:31:39,748: INFO: common:created directory at: artifacts]
+[2023-12-24 19:31:39,749: INFO: common:created directory at: artifacts/data_ingestion]
+[2023-12-24 19:31:39,750: INFO: data_ingestion:File already exists of size: ~ 11345 KB]
+[2023-12-24 19:31:41,547: INFO: main:>>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2023-12-24 19:31:41,549: INFO: main:*******************]
+[2023-12-24 19:31:41,555: INFO: main:>>>>>> stage Prepare base model started <<<<<<]
+[2023-12-24 19:31:41,577: INFO: common:yaml file: config\config.yaml loaded successfully]
+[2023-12-24 19:31:41,581: INFO: common:yaml file: params.yaml loaded successfully]
+[2023-12-24 19:31:41,584: INFO: common:created directory at: artifacts]
+[2023-12-24 19:31:41,589: INFO: common:created directory at: artifacts/prepare_base_model]
+[2023-12-24 19:31:41,846: WARNING: module_wrapper:From C:\Users\indtal\AppData\Local\anaconda3\envs\deepLearning\Lib\site-packages\keras\src\backend.py:1398: The name tf.executing_eagerly_outside_functions is deprecated. Please use tf.compat.v1.executing_eagerly_outside_functions instead.
+]
+[2023-12-24 19:31:41,975: WARNING: module_wrapper:From C:\Users\indtal\AppData\Local\anaconda3\envs\deepLearning\Lib\site-packages\keras\src\layers\pooling\max_pooling2d.py:161: The name tf.nn.max_pool is deprecated. Please use tf.nn.max_pool2d instead.
+]
+[2023-12-24 19:31:42,685: WARNING: saving_utils:Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2023-12-24 19:31:43,086: INFO: main:>>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2023-12-24 19:31:43,088: INFO: main:*******************]
+[2023-12-24 19:31:43,088: INFO: main:>>>>>> stage Training started <<<<<<]
+[2023-12-24 19:31:43,090: INFO: common:yaml file: config\config.yaml loaded successfully]
+[2023-12-24 19:31:43,092: INFO: common:yaml file: params.yaml loaded successfully]
+[2023-12-24 19:31:43,093: INFO: common:created directory at: artifacts]
+[2023-12-24 19:31:43,094: INFO: common:created directory at: artifacts\prepare_callbacks\checkpoint_dir]
+[2023-12-24 19:31:43,096: INFO: common:created directory at: artifacts\prepare_callbacks\tensorboard_log_dir]
+[2023-12-24 19:31:43,104: INFO: common:created directory at: artifacts\training]
+[2023-12-24 19:31:44,403: WARNING: module_wrapper:From C:\Users\indtal\AppData\Local\anaconda3\envs\deepLearning\Lib\site-packages\keras\src\utils\tf_utils.py:492: The name tf.ragged.RaggedTensorValue is deprecated. Please use tf.compat.v1.ragged.RaggedTensorValue instead.
+]
+[2023-12-24 19:32:28,597: INFO: main:>>>>>> stage Training completed <<<<<<
+
+x==========x]
+[2023-12-24 19:32:28,599: INFO: main:*******************]
+[2023-12-24 19:32:28,602: INFO: main:>>>>>> stage Evaluation stage started <<<<<<]
+[2023-12-24 19:32:28,607: INFO: common:yaml file: config\config.yaml loaded successfully]
+[2023-12-24 19:32:28,612: INFO: common:yaml file: params.yaml loaded successfully]
+[2023-12-24 19:32:28,614: INFO: common:created directory at: artifacts]
+[2023-12-24 19:32:43,322: INFO: common:json file saved at: scores.json]
+[2023-12-24 19:32:43,323: INFO: main:>>>>>> stage Evaluation stage completed <<<<<<
+
+x==========x]
