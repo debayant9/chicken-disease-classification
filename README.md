@@ -138,16 +138,16 @@ open up you local host and port
 
 ## Save pass:
 
-s3cEZKH5yytiVnJ3h+eI3qhhzf9q1vNwEi6+q+WGdd+ACRCZ7JD6
+VLGptvByuCPwTUGhIArFgz7oE9hGNDogX9Ns70x2nk+ACRAzuuGg
 
 
 ## Run from terminal:
 
-docker build -t chickenapp.azurecr.io/chicken:latest .
+docker build -t chickencvapp.azurecr.io/chicken:latest .
 
-docker login chickenapp.azurecr.io
+docker login chickencvapp.azurecr.io
 
-docker push chickenapp.azurecr.io/chicken:latest
+docker push chickencvapp.azurecr.io/chicken:latest
 
 
 ## Deployment Steps:

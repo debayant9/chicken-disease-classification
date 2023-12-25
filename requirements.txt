@@ -1,7 +1,7 @@
 tensorflow
 pandas
 dvc
-numpy==1.26.0
+numpy
 matplotlib
 seaborn
 python-box==6.0.2
