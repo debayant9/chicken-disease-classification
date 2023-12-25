@@ -547,3 +547,358 @@ x==========x]
 [2023-12-24 19:32:43,323: INFO: main:>>>>>> stage Evaluation stage completed <<<<<<
 
 x==========x]
+[2023-12-24 19:54:35,967: INFO: stage_01_data_ingestion:>>>>>> stage Data Ingestion stage started <<<<<<]
+[2023-12-24 19:54:35,972: INFO: common:yaml file: config\config.yaml loaded successfully]
+[2023-12-24 19:54:35,975: INFO: common:yaml file: params.yaml loaded successfully]
+[2023-12-24 19:54:35,976: INFO: common:created directory at: artifacts]
+[2023-12-24 19:54:35,978: INFO: common:created directory at: artifacts/data_ingestion]
+[2023-12-24 19:54:43,510: INFO: data_ingestion:artifacts/data_ingestion/data.zip download! with following info: 
+Connection: close
+Content-Length: 11616915
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "adf745abc03891fe493c3be264ec012691fe3fa21d861f35a27edbe6d86a76b1"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: 98C6:30CBFA:227ECD:3CEF5F:65883F25
+Accept-Ranges: bytes
+Date: Sun, 24 Dec 2023 14:24:38 GMT
+Via: 1.1 varnish
+X-Served-By: cache-hyd1100021-HYD
+X-Cache: MISS
+X-Cache-Hits: 0
+X-Timer: S1703427878.599507,VS0,VE884
+Vary: Authorization,Accept-Encoding,Origin
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: 131d81a67bb9c01739176a5809b4cc164f30d67f
+Expires: Sun, 24 Dec 2023 14:29:38 GMT
+Source-Age: 1
+
+]
+[2023-12-24 19:54:44,191: INFO: stage_01_data_ingestion:>>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2023-12-24 19:55:07,174: WARNING: module_wrapper:From C:\Users\indtal\AppData\Local\anaconda3\envs\deepLearning\Lib\site-packages\keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+]
+[2023-12-24 19:55:07,549: INFO: utils:NumExpr defaulting to 8 threads.]
+[2023-12-24 19:55:08,694: INFO: stage_02_prepare_base_model:*******************]
+[2023-12-24 19:55:08,695: INFO: stage_02_prepare_base_model:>>>>>> stage Prepare base model stage started <<<<<<]
+[2023-12-24 19:55:08,700: INFO: common:yaml file: config\config.yaml loaded successfully]
+[2023-12-24 19:55:08,704: INFO: common:yaml file: params.yaml loaded successfully]
+[2023-12-24 19:55:08,705: INFO: common:created directory at: artifacts]
+[2023-12-24 19:55:08,713: INFO: common:created directory at: artifacts/prepare_base_model]
+[2023-12-24 19:55:08,979: WARNING: module_wrapper:From C:\Users\indtal\AppData\Local\anaconda3\envs\deepLearning\Lib\site-packages\keras\src\backend.py:1398: The name tf.executing_eagerly_outside_functions is deprecated. Please use tf.compat.v1.executing_eagerly_outside_functions instead.
+]
+[2023-12-24 19:55:09,172: WARNING: module_wrapper:From C:\Users\indtal\AppData\Local\anaconda3\envs\deepLearning\Lib\site-packages\keras\src\layers\pooling\max_pooling2d.py:161: The name tf.nn.max_pool is deprecated. Please use tf.nn.max_pool2d instead.
+]
+[2023-12-24 19:55:09,748: WARNING: saving_utils:Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2023-12-24 19:55:10,088: INFO: stage_02_prepare_base_model:>>>>>> stage Prepare base model stage completed <<<<<<
+
+x==========x]
+[2023-12-24 19:55:18,444: WARNING: module_wrapper:From C:\Users\indtal\AppData\Local\anaconda3\envs\deepLearning\Lib\site-packages\keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+]
+[2023-12-24 19:55:18,653: INFO: utils:NumExpr defaulting to 8 threads.]
+[2023-12-24 19:55:19,259: INFO: stage_03_training:*******************]
+[2023-12-24 19:55:19,260: INFO: stage_03_training:>>>>>> stage Training started <<<<<<]
+[2023-12-24 19:55:19,263: INFO: common:yaml file: config\config.yaml loaded successfully]
+[2023-12-24 19:55:19,266: INFO: common:yaml file: params.yaml loaded successfully]
+[2023-12-24 19:55:19,267: INFO: common:created directory at: artifacts]
+[2023-12-24 19:55:19,273: INFO: common:created directory at: artifacts\prepare_callbacks\checkpoint_dir]
+[2023-12-24 19:55:19,275: INFO: common:created directory at: artifacts\prepare_callbacks\tensorboard_log_dir]
+[2023-12-24 19:55:19,283: INFO: common:created directory at: artifacts\training]
+[2023-12-24 19:55:19,542: WARNING: module_wrapper:From C:\Users\indtal\AppData\Local\anaconda3\envs\deepLearning\Lib\site-packages\keras\src\backend.py:1398: The name tf.executing_eagerly_outside_functions is deprecated. Please use tf.compat.v1.executing_eagerly_outside_functions instead.
+]
+[2023-12-24 19:55:19,568: WARNING: module_wrapper:From C:\Users\indtal\AppData\Local\anaconda3\envs\deepLearning\Lib\site-packages\keras\src\layers\pooling\max_pooling2d.py:161: The name tf.nn.max_pool is deprecated. Please use tf.nn.max_pool2d instead.
+]
+[2023-12-24 19:55:21,164: WARNING: module_wrapper:From C:\Users\indtal\AppData\Local\anaconda3\envs\deepLearning\Lib\site-packages\keras\src\utils\tf_utils.py:492: The name tf.ragged.RaggedTensorValue is deprecated. Please use tf.compat.v1.ragged.RaggedTensorValue instead.
+]
+[2023-12-24 19:56:20,809: INFO: stage_03_training:>>>>>> stage Training completed <<<<<<
+
+x==========x]
+[2023-12-24 19:56:35,798: WARNING: module_wrapper:From C:\Users\indtal\AppData\Local\anaconda3\envs\deepLearning\Lib\site-packages\keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+]
+[2023-12-24 19:56:36,084: INFO: utils:NumExpr defaulting to 8 threads.]
+[2023-12-24 19:56:36,907: INFO: stage_04_evaluation:*******************]
+[2023-12-24 19:56:36,908: INFO: stage_04_evaluation:>>>>>> stage Evaluation stage started <<<<<<]
+[2023-12-24 19:56:36,913: INFO: common:yaml file: config\config.yaml loaded successfully]
+[2023-12-24 19:56:36,916: INFO: common:yaml file: params.yaml loaded successfully]
+[2023-12-24 19:56:36,917: INFO: common:created directory at: artifacts]
+[2023-12-24 19:56:37,218: WARNING: module_wrapper:From C:\Users\indtal\AppData\Local\anaconda3\envs\deepLearning\Lib\site-packages\keras\src\backend.py:1398: The name tf.executing_eagerly_outside_functions is deprecated. Please use tf.compat.v1.executing_eagerly_outside_functions instead.
+]
+[2023-12-24 19:56:37,246: WARNING: module_wrapper:From C:\Users\indtal\AppData\Local\anaconda3\envs\deepLearning\Lib\site-packages\keras\src\layers\pooling\max_pooling2d.py:161: The name tf.nn.max_pool is deprecated. Please use tf.nn.max_pool2d instead.
+]
+[2023-12-24 19:56:38,371: WARNING: module_wrapper:From C:\Users\indtal\AppData\Local\anaconda3\envs\deepLearning\Lib\site-packages\keras\src\utils\tf_utils.py:492: The name tf.ragged.RaggedTensorValue is deprecated. Please use tf.compat.v1.ragged.RaggedTensorValue instead.
+]
+[2023-12-24 19:56:54,630: INFO: common:json file saved at: scores.json]
+[2023-12-24 19:56:54,631: INFO: stage_04_evaluation:>>>>>> stage Evaluation stage completed <<<<<<
+
+x==========x]
+[2023-12-24 20:48:00,197: WARNING: module_wrapper:From C:\Users\indtal\AppData\Local\anaconda3\envs\deepLearning\Lib\site-packages\keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+]
+[2023-12-24 20:48:00,635: INFO: utils:NumExpr defaulting to 8 threads.]
+[2023-12-24 20:48:01,579: INFO: _internal:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:80
+ * Running on http://192.168.1.6:80]
+[2023-12-24 20:48:01,579: INFO: _internal:[33mPress CTRL+C to quit[0m]
+[2023-12-24 20:48:13,336: ERROR: app:Exception on / [GET]]
+Traceback (most recent call last):
+  File "C:\Users\indtal\AppData\Local\anaconda3\envs\deepLearning\Lib\site-packages\flask\app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\indtal\AppData\Local\anaconda3\envs\deepLearning\Lib\site-packages\flask\app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\indtal\AppData\Local\anaconda3\envs\deepLearning\Lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\indtal\AppData\Local\anaconda3\envs\deepLearning\Lib\site-packages\flask\app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\indtal\AppData\Local\anaconda3\envs\deepLearning\Lib\site-packages\flask\app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\indtal\AppData\Local\anaconda3\envs\deepLearning\Lib\site-packages\flask_cors\decorator.py", line 130, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+                         ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\indtal\OneDrive - Vanderlande\Desktop\Misc\Projects - 2024\chicken-disease-classification\app.py", line 23, in home
+    return render_template('index.html')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\indtal\AppData\Local\anaconda3\envs\deepLearning\Lib\site-packages\flask\templating.py", line 151, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\indtal\AppData\Local\anaconda3\envs\deepLearning\Lib\site-packages\jinja2\environment.py", line 1081, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\indtal\AppData\Local\anaconda3\envs\deepLearning\Lib\site-packages\jinja2\environment.py", line 1010, in get_template
+    return self._load_template(name, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\indtal\AppData\Local\anaconda3\envs\deepLearning\Lib\site-packages\jinja2\environment.py", line 969, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\indtal\AppData\Local\anaconda3\envs\deepLearning\Lib\site-packages\jinja2\loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\indtal\AppData\Local\anaconda3\envs\deepLearning\Lib\site-packages\flask\templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\indtal\AppData\Local\anaconda3\envs\deepLearning\Lib\site-packages\flask\templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: index.html
+[2023-12-24 20:48:13,353: INFO: _internal:127.0.0.1 - - [24/Dec/2023 20:48:13] "[35m[1mGET / HTTP/1.1[0m" 500 -]
+[2023-12-24 20:48:13,758: INFO: _internal:127.0.0.1 - - [24/Dec/2023 20:48:13] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -]
+[2023-12-24 20:48:47,083: ERROR: app:Exception on / [GET]]
+Traceback (most recent call last):
+  File "C:\Users\indtal\AppData\Local\anaconda3\envs\deepLearning\Lib\site-packages\flask\app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\indtal\AppData\Local\anaconda3\envs\deepLearning\Lib\site-packages\flask\app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\indtal\AppData\Local\anaconda3\envs\deepLearning\Lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\indtal\AppData\Local\anaconda3\envs\deepLearning\Lib\site-packages\flask\app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\indtal\AppData\Local\anaconda3\envs\deepLearning\Lib\site-packages\flask\app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\indtal\AppData\Local\anaconda3\envs\deepLearning\Lib\site-packages\flask_cors\decorator.py", line 130, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+                         ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\indtal\OneDrive - Vanderlande\Desktop\Misc\Projects - 2024\chicken-disease-classification\app.py", line 23, in home
+    return render_template('index.html')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\indtal\AppData\Local\anaconda3\envs\deepLearning\Lib\site-packages\flask\templating.py", line 151, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\indtal\AppData\Local\anaconda3\envs\deepLearning\Lib\site-packages\jinja2\environment.py", line 1081, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\indtal\AppData\Local\anaconda3\envs\deepLearning\Lib\site-packages\jinja2\environment.py", line 1010, in get_template
+    return self._load_template(name, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\indtal\AppData\Local\anaconda3\envs\deepLearning\Lib\site-packages\jinja2\environment.py", line 969, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\indtal\AppData\Local\anaconda3\envs\deepLearning\Lib\site-packages\jinja2\loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\indtal\AppData\Local\anaconda3\envs\deepLearning\Lib\site-packages\flask\templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\indtal\AppData\Local\anaconda3\envs\deepLearning\Lib\site-packages\flask\templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: index.html
+[2023-12-24 20:48:47,095: INFO: _internal:192.168.1.6 - - [24/Dec/2023 20:48:47] "[35m[1mGET / HTTP/1.1[0m" 500 -]
+[2023-12-24 20:48:47,363: INFO: _internal:192.168.1.6 - - [24/Dec/2023 20:48:47] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -]
+[2023-12-24 20:49:01,866: ERROR: app:Exception on / [GET]]
+Traceback (most recent call last):
+  File "C:\Users\indtal\AppData\Local\anaconda3\envs\deepLearning\Lib\site-packages\flask\app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\indtal\AppData\Local\anaconda3\envs\deepLearning\Lib\site-packages\flask\app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\indtal\AppData\Local\anaconda3\envs\deepLearning\Lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\indtal\AppData\Local\anaconda3\envs\deepLearning\Lib\site-packages\flask\app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\indtal\AppData\Local\anaconda3\envs\deepLearning\Lib\site-packages\flask\app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\indtal\AppData\Local\anaconda3\envs\deepLearning\Lib\site-packages\flask_cors\decorator.py", line 130, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+                         ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\indtal\OneDrive - Vanderlande\Desktop\Misc\Projects - 2024\chicken-disease-classification\app.py", line 23, in home
+    return render_template('index.html')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\indtal\AppData\Local\anaconda3\envs\deepLearning\Lib\site-packages\flask\templating.py", line 151, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\indtal\AppData\Local\anaconda3\envs\deepLearning\Lib\site-packages\jinja2\environment.py", line 1081, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\indtal\AppData\Local\anaconda3\envs\deepLearning\Lib\site-packages\jinja2\environment.py", line 1010, in get_template
+    return self._load_template(name, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\indtal\AppData\Local\anaconda3\envs\deepLearning\Lib\site-packages\jinja2\environment.py", line 969, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\indtal\AppData\Local\anaconda3\envs\deepLearning\Lib\site-packages\jinja2\loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\indtal\AppData\Local\anaconda3\envs\deepLearning\Lib\site-packages\flask\templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\indtal\AppData\Local\anaconda3\envs\deepLearning\Lib\site-packages\flask\templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: index.html
+[2023-12-24 20:49:01,872: INFO: _internal:127.0.0.1 - - [24/Dec/2023 20:49:01] "[35m[1mGET / HTTP/1.1[0m" 500 -]
+[2023-12-24 20:49:58,020: WARNING: module_wrapper:From C:\Users\indtal\AppData\Local\anaconda3\envs\deepLearning\Lib\site-packages\keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+]
+[2023-12-24 20:49:58,257: INFO: utils:NumExpr defaulting to 8 threads.]
+[2023-12-24 20:49:58,749: INFO: _internal:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:80
+ * Running on http://192.168.1.6:80]
+[2023-12-24 20:49:58,750: INFO: _internal:[33mPress CTRL+C to quit[0m]
+[2023-12-24 20:50:58,060: ERROR: app:Exception on / [GET]]
+Traceback (most recent call last):
+  File "C:\Users\indtal\AppData\Local\anaconda3\envs\deepLearning\Lib\site-packages\flask\app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\indtal\AppData\Local\anaconda3\envs\deepLearning\Lib\site-packages\flask\app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\indtal\AppData\Local\anaconda3\envs\deepLearning\Lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\indtal\AppData\Local\anaconda3\envs\deepLearning\Lib\site-packages\flask\app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\indtal\AppData\Local\anaconda3\envs\deepLearning\Lib\site-packages\flask\app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\indtal\AppData\Local\anaconda3\envs\deepLearning\Lib\site-packages\flask_cors\decorator.py", line 130, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+                         ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\indtal\OneDrive - Vanderlande\Desktop\Misc\Projects - 2024\chicken-disease-classification\app.py", line 23, in home
+    return render_template('index.html')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\indtal\AppData\Local\anaconda3\envs\deepLearning\Lib\site-packages\flask\templating.py", line 151, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\indtal\AppData\Local\anaconda3\envs\deepLearning\Lib\site-packages\jinja2\environment.py", line 1081, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\indtal\AppData\Local\anaconda3\envs\deepLearning\Lib\site-packages\jinja2\environment.py", line 1010, in get_template
+    return self._load_template(name, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\indtal\AppData\Local\anaconda3\envs\deepLearning\Lib\site-packages\jinja2\environment.py", line 969, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\indtal\AppData\Local\anaconda3\envs\deepLearning\Lib\site-packages\jinja2\loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\indtal\AppData\Local\anaconda3\envs\deepLearning\Lib\site-packages\flask\templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\indtal\AppData\Local\anaconda3\envs\deepLearning\Lib\site-packages\flask\templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: index.html
+[2023-12-24 20:50:58,072: INFO: _internal:127.0.0.1 - - [24/Dec/2023 20:50:58] "[35m[1mGET / HTTP/1.1[0m" 500 -]
+[2023-12-24 20:52:32,218: WARNING: module_wrapper:From C:\Users\indtal\AppData\Local\anaconda3\envs\deepLearning\Lib\site-packages\keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+]
+[2023-12-24 20:52:32,432: INFO: utils:NumExpr defaulting to 8 threads.]
+[2023-12-24 20:52:32,906: INFO: _internal:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:80
+ * Running on http://192.168.1.6:80]
+[2023-12-24 20:52:32,907: INFO: _internal:[33mPress CTRL+C to quit[0m]
+[2023-12-24 20:52:37,423: ERROR: app:Exception on / [GET]]
+Traceback (most recent call last):
+  File "C:\Users\indtal\AppData\Local\anaconda3\envs\deepLearning\Lib\site-packages\flask\app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\indtal\AppData\Local\anaconda3\envs\deepLearning\Lib\site-packages\flask\app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\indtal\AppData\Local\anaconda3\envs\deepLearning\Lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\indtal\AppData\Local\anaconda3\envs\deepLearning\Lib\site-packages\flask\app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\indtal\AppData\Local\anaconda3\envs\deepLearning\Lib\site-packages\flask\app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\indtal\AppData\Local\anaconda3\envs\deepLearning\Lib\site-packages\flask_cors\decorator.py", line 130, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+                         ^^^^^^^^^^^^^^^^^^
+  File "c:\Users\indtal\OneDrive - Vanderlande\Desktop\Misc\Projects - 2024\chicken-disease-classification\app.py", line 24, in home
+    return render_template('index.html')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\indtal\AppData\Local\anaconda3\envs\deepLearning\Lib\site-packages\flask\templating.py", line 151, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\indtal\AppData\Local\anaconda3\envs\deepLearning\Lib\site-packages\jinja2\environment.py", line 1081, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\indtal\AppData\Local\anaconda3\envs\deepLearning\Lib\site-packages\jinja2\environment.py", line 1010, in get_template
+    return self._load_template(name, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\indtal\AppData\Local\anaconda3\envs\deepLearning\Lib\site-packages\jinja2\environment.py", line 969, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\indtal\AppData\Local\anaconda3\envs\deepLearning\Lib\site-packages\jinja2\loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\indtal\AppData\Local\anaconda3\envs\deepLearning\Lib\site-packages\flask\templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\indtal\AppData\Local\anaconda3\envs\deepLearning\Lib\site-packages\flask\templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: index.html
+[2023-12-24 20:52:37,434: INFO: _internal:127.0.0.1 - - [24/Dec/2023 20:52:37] "[35m[1mGET / HTTP/1.1[0m" 500 -]
+[2023-12-24 20:54:46,037: WARNING: module_wrapper:From C:\Users\indtal\AppData\Local\anaconda3\envs\deepLearning\Lib\site-packages\keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+]
+[2023-12-24 20:54:46,273: INFO: utils:NumExpr defaulting to 8 threads.]
+[2023-12-24 20:54:46,719: INFO: _internal:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:80
+ * Running on http://192.168.1.6:80]
+[2023-12-24 20:54:46,720: INFO: _internal:[33mPress CTRL+C to quit[0m]
+[2023-12-24 20:54:49,499: INFO: _internal:127.0.0.1 - - [24/Dec/2023 20:54:49] "GET / HTTP/1.1" 200 -]
+[2023-12-24 20:55:43,894: WARNING: module_wrapper:From C:\Users\indtal\AppData\Local\anaconda3\envs\deepLearning\Lib\site-packages\keras\src\backend.py:1398: The name tf.executing_eagerly_outside_functions is deprecated. Please use tf.compat.v1.executing_eagerly_outside_functions instead.
+]
+[2023-12-24 20:55:43,932: WARNING: module_wrapper:From C:\Users\indtal\AppData\Local\anaconda3\envs\deepLearning\Lib\site-packages\keras\src\layers\pooling\max_pooling2d.py:161: The name tf.nn.max_pool is deprecated. Please use tf.nn.max_pool2d instead.
+]
+[2023-12-24 20:55:45,533: INFO: _internal:127.0.0.1 - - [24/Dec/2023 20:55:45] "POST /predict HTTP/1.1" 200 -]
